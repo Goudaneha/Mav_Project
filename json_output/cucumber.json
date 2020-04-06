@@ -1,0 +1,199 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Verify company name",
+        "description": "",
+        "id": "company-title-test;verify-company-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14505148600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on search page \"valid company name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid company name",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.user_is_on_search_page(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2041964400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters valid \"maveric systems\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "maveric systems",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.user_enters_valid(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32036645400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on \"search\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "search",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinition.user_clicks_on_button(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4830121600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigates to \"Home page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Home page",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.user_navigates_to(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Verify company name",
+        "description": "",
+        "id": "company-title-test;verify-company-name;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12909273700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on search page \"Invalid company name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid company name",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.user_is_on_search_page(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2025449301,
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[]\u003e but was:\u003c[maveric systems]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat com.stepdefinition.test.StepDefinition.user_enters_valid(StepDefinition.java:25)\r\n\tat ✽.When user enters valid \"\"(C:/Users/nehaashokj/eclipse-workspace/companysearch/src/main/java/feature/company.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user enters valid \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.user_enters_valid(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user clicks on \"search\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "search",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinition.user_clicks_on_button(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to \"Home page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Home page",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.user_navigates_to(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Company title test",
+    "description": "",
+    "id": "company-title-test",
+    "keyword": "Feature",
+    "uri": "C:/Users/nehaashokj/eclipse-workspace/companysearch/src/main/java/feature/company.feature"
+  }
+]

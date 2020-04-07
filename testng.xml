@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="none" verbose="3">
+
+	<listeners>
+		<listener class-name="com.listeners.TestJiraListener" />
+	</listeners>
+
+	<!-- Start First Test -->
+	<test name="Company name search" parallel="none" thread-count="5">
+		<!--parameter name="browser" value="gecko" />  -->
+		<classes>
+			<class name="com.runner.test.Runner" />
+		</classes>
+	</test> <!-- End First Test -->
+	</suite>

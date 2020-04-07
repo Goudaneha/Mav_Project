@@ -5,6 +5,8 @@ import com.mainmethod.test.BusinessMethod;
 import com.pageobjects.test.PageObjects;
 import com.utility.test.BrowserConfig;
 import com.utility.test.CommonMethods;
+import com.utility.test.JiraPolicy;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -18,6 +20,7 @@ public class StepDefinition  {
 		BusinessMethod.browsersetup();
 	}
 	
+	@JiraPolicy(logTicketReady = true)
 	@When("^user enters valid \"([^\"]*)\"$")
 	public void user_enters_valid(String company) throws InterruptedException, AWTException {
 		Thread.sleep(2000);
